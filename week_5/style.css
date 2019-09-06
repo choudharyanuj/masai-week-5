@@ -1,0 +1,36 @@
+.fnt_size {
+	font-size: 25px;
+}
+.movies_bg {
+	background-image: url(resources/bg-2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.characters_bg {
+	background-image: url(resources/bg-3.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.planets_bg {
+	background-image: url(resources/bg-4.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.species_bg {
+	background-image: url(resources/bg-5.jpg);
+	background-size: cover;
+	background-attachment: fixed;	
+}
+.starship_bg {
+	background-image: url(resources/ship.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.vehicles_bg {
+	background-image: url(resources/bg-6.jpg);
+	background-size: cover;
+	background-attachment: fixed;	
+}
+.bg-color {
+	background-color: rgba(0,0,0,0.3);
+}
