@@ -7,8 +7,46 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="characters_bg">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand mt-n2" href="index.html">
+          <img src="resources/logo.png" alt=" logo" style="width: 100px; height: 50px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto float-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="characters.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planets.html">Planets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="species.html">Species</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="starship.html">Starships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vehicles.html">Vehicles</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
 	<div id="display">
 	</div>
+
+
 <script type="text/javascript">
 		window.onload =function () {
 		var xhr = new XMLHttpRequest(); 
@@ -25,7 +63,7 @@
 
 
 characters_object.results.forEach(function(element){
-              $("#display").append("<div class='col-4 float-left text-center mb-5'>" + "<div class='card bg-color text-light font-weight-bolder'>" +
+              $("#display").append("<div class='col-4 float-left text-center mb-5 mt-5'>" + "<div class='card bg-color text-light font-weight-bolder'>" +
               "<div class='card-body'>" + "<h5 class='card-title'>" +"<b>" +element.name+"</b>"+
               "</h5>" + "<p class='card-text'>Gender: " +element.gender + "</p>" +
               "<p class='card-text'>Height: " +element.height + "</p>" +
